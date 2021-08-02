@@ -6,8 +6,9 @@ function* watchTestRequest() {
 
 }
 
-
 function* getTestRequest(action) {
+
+    console.log("Saga calisti : "+ action.type)
 
       yield call(callApi,
         'get',

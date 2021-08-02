@@ -4,8 +4,7 @@ const initialState = {
 
 const tests = (state = initialState, action) => {
 
-  console.log(action) 
-  console.log(action.payload)
+  console.log("Reducer calisti :"+action.type) 
 
   switch (action.type) {
     case "TEST_REQUEST":
